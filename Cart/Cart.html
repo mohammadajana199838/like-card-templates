@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .Cart {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .Cart h2 {
+            font-size: 225%;
+            padding-left: 11%;
+        }
+        
+        .continue {
+            position: absolute;
+            text-align: center;
+            border-radius: 7px;
+            border: 1px solid #1e1e8e;
+            height: 40px;
+            width: 189px;
+            cursor: pointer;
+            top: 5%;
+            right: 10%;
+            color: #1e1e8e;
+        }
+        
+        .continue p {
+            margin-top: 10px;
+        }
+        
+        .grid-container {
+            position: relative;
+            display: grid;
+            grid-template-areas: "photo title quantity coast point close-btn" "photo parg quantity coast point close-btn" "photo price quantity coast point close-btn";
+            grid-template-columns: 25% 25% 12% 11% 10% 15%;
+            grid-template-rows: 23px 18px 13px 13px;
+            padding: 8px;
+        }
+        
+        .photo {
+            grid-area: photo;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .photo img {
+            height: 77px;
+            width: 154px;
+        }
+        
+        .title {
+            grid-area: title;
+            align-self: center;
+        }
+        
+        .title h3 {
+            margin: 0;
+            font-size: 100%;
+        }
+        
+        .parg {
+            grid-area: parg;
+            color: grey;
+        }
+        /*  .price {
+            grid-area: price;
+            text-align: start;
+        }*/
+        
+        .close-btn {
+            grid-area: close-btn;
+            justify-self: center;
+            align-self: center;
+        }
+        
+        .close-btn button {
+            border-radius: 15%;
+            border: 0.4px solid lightgrey;
+            cursor: pointer;
+            background-color: white;
+        }
+        
+        .close-btn button:hover {
+            background-color: orangered;
+            color: navy;
+        }
+        
+        .quantity {
+            grid-area: quantity;
+            align-self: center;
+        }
+        
+        .butt {
+            border: 0px solid white;
+            padding-right: 15px;
+            padding-left: 15px;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        .point {
+            padding: 10px;
+            grid-area: point;
+            align-self: center;
+            color: #fdc316;
+            border-radius: 8px;
+            border: 1px solid #ffc0cb2e;
+            background-color: #ffc0cb2e;
+            text-align: center;
+        }
+        
+        .coast {
+            grid-area: coast;
+            align-self: center;
+        }
+        
+        .line {
+            padding: 27%;
+            color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Cart">
+
+        <h2><b>Cart</b></h2>
+        <div class="continue">
+            <p>Continue shopping</p>
+        </div>
+
+        <div class="grid-container">
+            <div class="photo">
+                <img src="googleplay.jpG"></img>
+            </div>
+            <div class="title">
+                <h3>GooglePlay Gift card</h3>
+            </div>
+            <div class="parg">us store 20$</div>
+
+            <div class="quantity"><button class="butt">+</button>2<button class="butt">-</button></div>
+            <div class="coast">SAR 30</div>
+            <div class="point"> 40 points</div>
+
+            <div class="close-btn"><button>x</button></div>
+        </div>
+        <span class="line">_______________________________________________________________________________________________</span>
+
+
+        <div class="grid-container">
+            <div class="photo">
+                <img src="googleplay.jpG"></img>
+            </div>
+            <div class="title">
+                <h3>GooglePlay Gift card</h3>
+            </div>
+            <div class="parg">us store 20$</div>
+
+            <div class="quantity">
+                <button class="butt">+</button> 2
+                <button class="butt">-</button>
+            </div>
+            <div class="coast">SAR 30</div>
+            <div class="point"> 40 points</div>
+
+            <div class="close-btn"><button>x</button></div>
+        </div>
+
+
+        <span class="line">_______________________________________________________________________________________________</span>
+        <div class="grid-container">
+            <div class="photo">
+                <img src="googleplay.jpG"></img>
+            </div>
+            <div class="title">
+                <h3>GooglePlay Gift card</h3>
+            </div>
+            <div class="parg">us store 20$</div>
+
+            <div class="quantity"><button class="butt">+</button>2<button class="butt">-</button></div>
+            <div class="coast">SAR 30</div>
+            <div class="point"> 40 points</div>
+
+            <div class="close-btn"><button>x</button></div>
+        </div>
+    </div>
+</body>
+
+</html>

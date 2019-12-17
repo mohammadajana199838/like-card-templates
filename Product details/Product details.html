@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .footer {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .footer-left-div {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 625px;
+            background: Navy;
+            min-width: 60%;
+            max-width: 60%;
+            border-bottom-left-radius: 25px;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .footer-circles-div {
+            position: absolute;
+            bottom: -13px;
+            right: -18px;
+            overflow: hidden;
+            width: 272px;
+        }
+        
+        .footer-half-circle-1 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            right: 20%;
+            top: 10%;
+            background-color: #a58b6b8a;
+        }
+        
+        .footer-half-circle-2 {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 26%;
+            right: -6%;
+            bottom: -5%;
+            background-color: darkorange;
+            z-index: 1;
+        }
+        
+        .footer-circle {
+            display: inline-block;
+            background-color: rgba(193, 224, 236, 0.13);
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+        
+        .footer-right-div {
+            position: relative;
+            max-width: 40%;
+            min-width: 40%;
+        }
+        
+        .footer-left-div h1 {
+            color: white;
+            font-size: 250%;
+            margin-bottom: 10px;
+            margin-top: -15px;
+            padding-right: 38%;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 10% 10% 20%;
+            grid-template-rows: 30px 30px;
+            grid-template-areas: "store store store quantity quantity quantity" "KSA USA UK plus number min";
+            color: wheat;
+            align-self: stretch;
+            padding: 0 18%;
+            z-index: 5;
+        }
+        
+        .store {
+            grid-area: store;
+        }
+        
+        .quantity {
+            grid-area: quantity;
+        }
+        
+        .KSA {
+            grid-area: KSA;
+        }
+        
+        .USA {
+            grid-area: USA;
+        }
+        
+        .UK {
+            grid-area: UK;
+        }
+        
+        .plus {
+            grid-area: plus;
+        }
+        
+        .number {
+            grid-area: number;
+        }
+        
+        .min {
+            grid-area: min;
+        }
+        
+        button {
+            cursor: pointer;
+            color: grey;
+            border-radius: 3px;
+            background-color: #5356a2b3;
+            border: 1px solid #191d8e;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="footer">
+
+
+        <div class="footer-right-div">
+
+
+        </div>
+
+
+        <div class="footer-left-div">
+
+            <h1>Buy
+                <font color="orange">iTunes</font><br> Gift card </h1>
+
+
+            <div class="grid-container">
+                <div class="store">Store</div>
+                <div class="quantity">quantity</div>
+                <div class="KSA">KSA</div>
+                <div class="USA">USA</div>
+                <div class="UK">UK</div>
+                <div class="plus"><button>+</button></div>
+                <div class="number">2</div>
+                <div class="min"><button>-</button></div>
+            </div>
+
+            <div class="footer-circles-div">
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+
+            </div>
+
+
+            <div class="footer-half-circle-1"></div>
+            <div class="footer-half-circle-2"></div>
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

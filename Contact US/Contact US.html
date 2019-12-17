@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+        
+        .container-reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .right-div {
+            position: relative;
+            height: 600px;
+            width: 400px;
+            background-color: navy;
+            border-radius: 20px;
+        }
+        
+        .your-name {
+            position: absolute;
+            border-radius: 7px;
+            border: 1.4px solid #5d60a8;
+            height: 44px;
+            width: 310px;
+            background-color: navy;
+            color: lightgrey;
+            top: 17%;
+            right: 12%;
+        }
+        
+        .cell-1 {
+            position: absolute;
+            color: lightgrey;
+            top: 61px;
+            left: 43px;
+        }
+        
+        .Email {
+            position: absolute;
+            border-radius: 7px;
+            border: 1.4px solid #5d60a8;
+            height: 44px;
+            width: 310px;
+            color: lightgrey;
+            background-color: navy;
+            top: 34%;
+            right: 12%;
+        }
+        
+        .cell-2 {
+            position: absolute;
+            color: lightgrey;
+            top: 162px;
+            left: 43px;
+        }
+        
+        .message {
+            position: absolute;
+            border-radius: 7px;
+            border: 1.4px solid #5d60a8;
+            height: 114px;
+            width: 308px;
+            color: lightgrey;
+            background-color: navy;
+            top: 53%;
+            right: 12%;
+        }
+        
+        .cell-3 {
+            position: absolute;
+            color: lightgrey;
+            top: 276px;
+            left: 43px;
+        }
+        
+        .send-message {
+            position: absolute;
+            border-radius: 7px;
+            border: 1.4px solid #5d60a8;
+            height: 42px;
+            width: 310px;
+            color: navy;
+            background-color: white;
+            top: 83%;
+            right: 12%;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .send-message p {
+            font-family: sans-serif;
+            margin-top: 10px;
+            color: blue;
+            font-size: 18px;
+        }
+        
+        .left-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .left-div h1 {
+            font-size: 250%;
+        }
+        
+        p {
+            color: lightgrey;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="left-div">
+            <h1><b>Contact Us</b></h1>
+            <h2><b> So strongly and metaphysical </b></h2>
+            <p>The monkey-rope is found in all whalers; but it was only in the<br> pequod that the monkey and his holder were ever tied together.<br> This improvement upon the orignal usage was introduced by <br> no less aman.<br><br> pequod that monkey
+                and his holder were ever tied together.
+                <br> This improvment upon the original usage </p>
+        </div>
+
+        <div class="right-div">
+
+            <p class="cell-1">Yourname</p>
+            <input class="your-name" type="text">
+
+
+            <p class="cell-2">Email</p>
+            <input class="Email" type="text">
+
+
+            <p class="cell-3">message</p>
+            <textarea class="message">
+                </textarea>
+
+
+
+
+            <span class="send-message"><p>Send message</p></span>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

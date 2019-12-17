@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        .container {
+            font-family: "Segoe UI", Arial, sans-serif;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .container-reverse {
+            flex-direction: row-reverse;
+        }
+        
+        .right-div {
+            position: relative;
+        }
+        
+        .left-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .container img {
+            border-radius: 8%;
+            width: 300px;
+            height: 400px;
+            /* margin-top: 100px;
+            margin-bottom: 100px;
+            margin-right: 0px;
+            margin-left: 500px; */
+        }
+        
+        .circle1-sectio-1 {
+            background-color: lightblue;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 60%;
+            top: 20%;
+            z-index: 1;
+        }
+        
+        .circle2-sectio-1 {
+            background-color: orange;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 90%;
+            top: 50%;
+            z-index: -1;
+        }
+        
+        .circle3-sectio-1 {
+            background-color: orange;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 2%;
+            top: 90%;
+            z-index: -1;
+        }
+        
+        .circle4-sectio-1 {
+            background-color: lightgreen;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: -4%;
+            top: 33%;
+            z-index: 1;
+        }
+        /*section-2*/
+        
+        .circle1-sectio-2 {
+            background-color: lightblue;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 60%;
+            top: 20%;
+            z-index: 1;
+        }
+        
+        .circle2-sectio-2 {
+            background-color: orange;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 90%;
+            top: 50%;
+            z-index: -1;
+        }
+        
+        .circle3-sectio-2 {
+            background-color: orange;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 2%;
+            top: 90%;
+            z-index: -1;
+        }
+        
+        .circle4-sectio-2 {
+            background-color: lightgreen;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: -4%;
+            top: 33%;
+            z-index: 1;
+        }
+        /*section-3*/
+        
+        .circle1-sectio-3 {
+            background-color: lightblue;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 60%;
+            top: 20%;
+            z-index: 1;
+        }
+        
+        .circle2-sectio-3 {
+            background-color: orange;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 90%;
+            top: 50%;
+            z-index: -1;
+        }
+        
+        .circle3-sectio-3 {
+            background-color: orange;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: 2%;
+            top: 90%;
+            z-index: -1;
+        }
+        
+        .circle4-sectio-3 {
+            background-color: lightgreen;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            left: -4%;
+            top: 33%;
+            z-index: 1;
+        }
+        /*.container h1 {
+            font-size: 180%;
+        }*/
+        
+        .container p {
+            color: lightgrey;
+        }
+        /*----------------------------2*/
+        
+        .shap {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 25px;
+            background: Navy;
+            padding: 125px;
+            overflow: hidden;
+            margin: 115px;
+            padding-top: 185px;
+        }
+        
+        .right-2-div {
+            position: absolute;
+            height: 100%;
+            top: 5px;
+            right: 6px;
+            max-width: 25%;
+            overflow: hidden;
+        }
+        
+        .half-circle-1 {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            right: -4%;
+            top: 62%;
+            background-color: darkorange;
+        }
+        
+        .half-circle-2 {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            right: 38%;
+            bottom: 93%;
+            background-color: darkorange;
+        }
+        
+        .circle:nth-child(8) {
+            background-color: red;
+            opacity: 0;
+        }
+        
+        .circle:nth-child(27) {
+            background-color: red;
+            opacity: 0;
+        }
+        
+        .circle {
+            display: inline-block;
+            background-color: rgba(193, 224, 236, 0.13);
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            margin: 13px;
+        }
+        
+        .mail {
+            color: navy;
+            width: 180px;
+            height: 44px;
+            border-radius: 10px;
+            background-color: white;
+            position: absolute;
+            top: 67%;
+            left: 100px;
+            text-align: center;
+            font-size: 150%;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+        
+        .mail:hover {
+            color: blue;
+        }
+        
+        .title {
+            position: absolute;
+            top: 0%;
+            left: 100px;
+            color: white;
+            font-size: 240%;
+            font-family: sans-serif;
+        }
+        
+        .note {
+            position: absolute;
+            top: 34%;
+            left: 100px;
+            color: #b3b8c9;
+            font-size: 88%;
+            text-align: start;
+            font-family: sans-serif;
+        }
+        
+        .photo {
+            position: absolute;
+            top: 5%;
+            height: 95%;
+            width: 33%;
+            right: 10%;
+        }
+        
+        .mail p {
+            margin-top: 6px;
+        }
+        /*------------footer*/
+        
+        .footer {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .footer-left-div {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: Navy;
+            padding: 150px 60px 55px;
+            min-width: 50%;
+            max-width: 60%;
+            border-top-right-radius: 25px;
+            overflow: hidden;
+            margin-left: -45px;
+        }
+        
+        .footer-circles-div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            width: 450px;
+        }
+        
+        .footer-half-circle-1 {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            right: 93%;
+            top: -7%;
+            background-color: darkorange;
+        }
+        
+        .footer-half-circle-2 {
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            right: -7%;
+            top: 70%;
+            background-color: darkorange;
+            z-index: 1;
+        }
+        
+        .footer-circle:nth-child(9) {
+            background-color: red;
+            opacity: 0;
+        }
+        
+        .footer-circle:nth-child(6) {
+            background-color: red;
+            opacity: 0;
+        }
+        
+        .footer-circle:nth-child(3) {
+            background-color: red;
+            opacity: 0;
+        }
+        
+        .footer-circle:nth-child(15) {
+            background-color: red;
+            opacity: 0;
+        }
+        
+        .footer-circle {
+            display: inline-block;
+            background-color: rgba(193, 224, 236, 0.13);
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            margin: 14px;
+        }
+        
+        .list {
+            color: white;
+            font-size: 15px;
+            padding: 15px;
+            z-index: 5;
+            color: white;
+            padding: 15px;
+            z-index: 5;
+        }
+        
+        .about {
+            font-size: 15px;
+            color: #8691c3;
+            font-family: "Segoe UI", Arial, sans-serif;
+            text-align: start;
+        }
+        
+        h4 {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-weight: 400;
+            margin: 5px 0;
+        }
+        
+        .about ul {
+            padding: 7px;
+            list-style: none;
+        }
+        
+        li {
+            margin: 10px 0;
+        }
+        
+        li:hover {
+            color: white;
+        }
+        
+        .end:hover {
+            color: blue;
+        }
+        
+        li,
+        a {
+            cursor: pointer;
+        }
+        
+        .footer-right-div {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 75px;
+        }
+        
+        .logo {
+            flex-direction: row;
+        }
+        
+        .logo h1 {
+            right: 105px;
+            position: absolute;
+            top: 80px;
+            font-weight: 700;
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-size: 130%;
+        }
+        
+        .logo img {
+            position: absolute;
+            top: 65px;
+            right: 300px;
+        }
+        
+        .footer-right-div p {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: rgb(103, 103, 107);
+        }
+    </style>
+</head>
+
+<body>
+    //section-1
+    <div class="container">
+
+        <div class="left-div">
+            <h1><b> Digital is not passing trend,<br>it's a revolution </b></h1>
+            <p>that is happening right now and picking up speed every day.In the Middle East<br> and around the world,digital technologies are disrupting every aspect of <br> business,goverment,and individuals'lives.52 percent of MENA population do<br> not
+                have debit cards,So that,Arab Digital generation suffer when they are<br> purchasing online services or subscribe to paid apps and are being deprived of<br> getting benefits of the exponential growth of technology and tech startups<br>                services.
+            </p>
+        </div>
+
+        <div class="right-div">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/themes/mountains/bg_wed_1280x800.jpg" alt="Paris" />
+            <span class="circle1-sectio-1"></span>
+            <span class="circle2-sectio-1"> </span>
+            <span class="circle3-sectio-1"></span>
+            <span class="circle4-sectio-1"></span>
+        </div>
+
+    </div>
+    */section -2
+    <div class="container">
+
+
+
+        <div class="right-div">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/themes/mountains/bg_wed_1280x800.jpg" alt="Paris" />
+            <span class="circle1-sectio-2"></span>
+            <span class="circle2-sectio-2"> </span>
+            <span class="circle3-sectio-2"></span>
+            <span class="circle4-sectio-2"></span>
+        </div>
+        <div class="left-div">
+            <h1><b> LikeCard filling the Gap </b></h1>
+            <p>LikeCard comes to fill the gap between paid online services and customers by<br> offering varied pre-paid cards and secured and easy payment methods.Today<br> LikeCard is aleading platform in providing wide choices of pre-paid cards from<br>almost
+                all online services cards form Googlr,Apple,Sony,Netflix,Amazon,top-up<br> and data,Through smartphone application and website and innovative devices. </p>
+        </div>
+
+    </div>
+
+    //section-3
+    <div class="container">
+
+        <div class="left-div">
+            <h1><b>Available for wide range of<br>of devices and platforms</b></h1>
+            <p>The service is available on the web and via smartphone and innovative device.<br> LikeCard,today,Is the number 1 pre-paid platform in MENA region with the <br>largest catalog comprising of more than 500 pre-paid cards for more than 500<br>thousands
+                users.
+            </p>
+        </div>
+
+        <div class="right-div">
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/themes/mountains/bg_wed_1280x800.jpg" alt="Paris" />
+            <span class="circle1-sectio-3"></span>
+            <span class="circle2-sectio-3"> </span>
+            <span class="circle3-sectio-3"></span>
+            <span class="circle4-sectio-3"></span>
+        </div>
+
+    </div>
+    //-------------------2
+
+    <div class="shap">
+
+        <div class="right-2-div">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+        <div class="half-circle-1"></div>
+        <div class="half-circle-2"></div>
+
+        <span class="mail"><p>send email</p></span>
+
+        <h1 class="title">Partner with us</h1>
+        <p class="note">In the tumultuous business of cutting-in and attending to a whale,
+            <br> there is not running backwards and fo. </p>
+
+
+
+        <img class="photo" src="About-us-2.png"></img>
+
+
+    </div>
+    </div>
+    //----footer
+    <div class="footer">
+
+        <div class="footer-left-div">
+
+
+            <div class="list">
+                <h4>Store categories</h4>
+                <div class="about">
+                    <ul>
+                        <li><a herf=>Topups and Data</a></li>
+                        <li><a herf=>Video games</a></li>
+                        <li><a herf=> Ride sharing</a></li>
+                        <li><a herf=>VOD</a></li>
+                        <li><a herf=>Delivery</a></li>
+                        <li><a herf=>DOM</a></li>
+                        <li><a herf=>iTunes</a></li>
+                        <li><a herf=>Google Play</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="list">
+                <h4>Quicklinks</h4>
+                <div class="about">
+                    <ul>
+                        <li> <a herf=>Terms of use</a></li>
+                        <li> <a herf=>privacy policy</a></li>
+                        <li> <a herf=> Steps to Reacharge</a></li>
+                    </ul>
+                </div>
+                <h4>Customer Care</h4>
+                <div class="about">
+                    <ul>
+                        <li> <a herf=>Warrntly policy</a></li>
+                        <li> <a herf=>Return and Exchange</a></li>
+                        <li> <a herf=>FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="footer-circles-div">
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+                <span class="footer-circle"></span>
+            </div>
+
+
+            <div class="footer-half-circle-1"></div>
+            <div class="footer-half-circle-2"></div>
+
+
+        </div>
+
+
+
+        <div class="footer-right-div">
+            <div class="logo">
+                <img src="logo.png"></img>
+                <h1>Company Name</h1>
+            </div>
+            <p>I have hinted that I would ofetn jerk poor<br> Queequeg from between the whale and <br>the ship where he would fall </p>
+            <br>
+
+            <a class="end">+1-2345-456</a>
+            <br>
+            <a class="end">info@domain.com</a>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ .grid-container {
+            position: relative;
+            display: grid;
+            grid-template-areas: "photo title quantity close-btn" "photo parg quantity close-btn" "photo price quantity close-btn";
+            grid-template-columns: 30% 50% 10% 10%;
+            grid-template-rows: 30px 20px 15px;
+            font-size: 80%;
+            padding: 10px;
+        }
+        
+        .photo {
+            grid-area: photo;
+            justify-self: center;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .photo img {
+            height: 75px;
+            width: 75px;
+        }
+        
+        .title {
+            grid-area: title;
+            align-self: center;
+        }
+        
+        .title h3 {
+            margin: 0;
+        }
+        
+        .parg {
+            grid-area: parg;
+            color: grey;
+        }
+        
+        .price {
+            grid-area: price;
+            text-align: start;
+        }
+        
+        .close-btn {
+            grid-area: close-btn;
+            justify-self: center;
+            align-self: center;
+        }
+        
+        .close-btn button {
+            border-radius: 15%;
+            border: 0.4px solid lightgrey;
+            cursor: pointer;
+            background-color: white;
+        }
+        
+        .close-btn button:hover {
+            background-color: orangered;
+            color: navy;
+        }
+        
+        .quantity {
+            grid-area: quantity;
+            align-self: center;
+        }
+        
